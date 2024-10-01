@@ -1,0 +1,27 @@
+name: flutter_automation
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  collection: ^1.18.0  # Downgraded to match flutter_driver
+  http_parser: ^4.0.2  # Downgraded to resolve conflict
+  material_color_utilities: ^0.11.1  # Downgraded to match flutter_driver
+
+dev_dependencies:
+  flutter_driver:
+    sdk: flutter
+  test: any
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
